@@ -1,4 +1,4 @@
-package com.server.springboot.domin;
+package com.server.springboot.domain;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public abstract class BaseTimeEntity {
+
     @CreatedDate
     private LocalDateTime createdDate;
 
